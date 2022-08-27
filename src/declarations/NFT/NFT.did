@@ -1,0 +1,10 @@
+type CaniBack = 
+ service {
+   getCaniID: () -> (principal) query;
+   getImgData: () -> (text) query;
+   getOwnerNFT: () -> (principal) query;
+   getSoundData: () -> (text) query;
+   getTitle: () -> (text) query;
+   shipNFT: (principal, principal) -> (text);
+ };
+service : (text, principal, text, text) -> CaniBack

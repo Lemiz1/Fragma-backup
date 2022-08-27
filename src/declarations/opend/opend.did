@@ -1,2 +1,12 @@
 service : {
+  addToHolder: (principal, principal) -> () oneway;
+  checkListed: (principal) -> (bool) query;
+  getArrayNFTs: (principal) -> (vec principal) query;
+  getNFTListedPrice: (principal) -> (nat) query;
+  getOpenDCaniID: () -> (principal) query;
+  getRealOwner: (principal) -> (principal) query;
+  getSellingItem: () -> (vec principal) query;
+  newNFT: (principal, text, text, text) -> (principal);
+  purchase: (principal, principal, principal) -> (text);
+  sellNFTItem: (principal, principal, nat) -> (text);
 }

@@ -1,0 +1,18 @@
+// Version: 1.0.0
+type CaniBack =
+  actor {
+    getCaniID : shared query () -> async Principal;
+    getImgData : shared query () -> async Text;
+    getOwnerNFT : shared query () -> async Principal;
+    getSoundData : shared query () -> async Text;
+    getTitle : shared query () -> async Text;
+    shipNFT : shared (Principal, Principal) -> async Text
+  };
+type CaniBack__1 = CaniBack;
+type List<T> = ?(T, List<T>);
+type NFTData = {iOwnr : Principal; iPrice : Nat};
+actor {
+  stable var holderEntries : [(Principal, List<Principal>)];
+  stable var individualEntries : [(Principal, CaniBack__1)];
+  stable var sellEntries : [(Principal, NFTData)]
+};
