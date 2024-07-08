@@ -1,3 +1,4 @@
+Here's the instruction for doing the work.
 
 1. start local dfx
 
