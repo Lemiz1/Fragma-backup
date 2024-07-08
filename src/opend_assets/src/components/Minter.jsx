@@ -78,7 +78,7 @@ function Minter() {
     const imgData = data.imgNFT[0];
     const imgName = imgData.name;
     
-    console.log("Got the file name" + "img: " + imgName + " sound: "+ soundUploadName);
+    // console.log("Got the file name" + "img: " + imgName + " sound: "+ soundUploadName);
 
 
     
